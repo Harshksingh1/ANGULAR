@@ -1,0 +1,21 @@
+<h6 class="text-center text-success">Products List Display</h6>
+<table class="table table-hover table-success table-bordered">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>MFG Date</td>
+            <td>Expiry Date</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of srv.displayProducts()">
+            <td>{{product.id}}</td>
+            <td>{{product.pname|uppercase}}</td>
+            <td>{{product.price|currency:'INR'}}</td>
+            <td>{{product.mfgDate|date:'shortDate'}}</td>
+            <td>{{product.expDate|date:'shortDate'}}</td>
+        </tr>
+    </tbody>
+</table>

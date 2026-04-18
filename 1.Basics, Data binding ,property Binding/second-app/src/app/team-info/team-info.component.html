@@ -1,0 +1,22 @@
+
+<div class="container m-2">
+    <h2 class="bg-primary text-white text-center">IPL Teams Details:</h2>
+<table class="table table-bordered border-primary">
+    <thead>
+        <tr>
+            <th>Team ID</th>
+            <th>Team Name</th>
+            <th>Team logo</th>
+            <th>Team Slogan</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let t of team">
+            <td>{{t.tid}}</td>
+            <td>{{t.tname}}</td>
+            <td><img class="rounded mx-auto d-block" src="{{t.tlogo}}"></td>
+            <td>{{t.tslogan}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

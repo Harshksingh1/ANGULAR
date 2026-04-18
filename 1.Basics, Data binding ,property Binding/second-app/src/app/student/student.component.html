@@ -1,0 +1,15 @@
+<p>student Info</p>
+<h2>Student Name:{{student_name}}</h2>
+<h2>20+30={{20+30}}</h2>
+<img src="{{image_path}}">
+
+<h1>Property Binding</h1>
+Student Name:<input [value]="student_name"><br/>
+<img [src]="image_path">
+
+<h2>Event Binding</h2>
+<button (click)="welcome()">Welcome</button>
+
+<h2>Two way Data binding</h2>
+<input [(ngModel)]="student_name">
+<p>Welcome {{student_name}}</p>

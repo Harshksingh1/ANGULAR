@@ -1,0 +1,21 @@
+<h6 class="text-center text-success">Product Registration</h6>
+<form (ngSubmit)="regProduct()">
+    <div class="form-group m-2 p-2">
+        <label for="id" class="form-label">Product ID</label>
+        <input type="text" class="form-control" id="id" name="id" [(ngModel)]="product.id">
+
+         <label for="pname" class="form-label">Product Name</label>
+        <input type="text" class="form-control" id="pname" name="pname" [(ngModel)]="product.pname">
+
+         <label for="price" class="form-label">Product Price</label>
+        <input type="text" class="form-control" id="price" name="price" [(ngModel)]="product.price">
+
+         <label for="mfgDate" class="form-label">Product MFG Date</label>
+        <input type="text" class="form-control" id="mfgDate" name="mfgDate" [(ngModel)]="product.mfgDate">
+
+         <label for="expDate" class="form-label">Product EXP Date</label>
+        <input type="text" class="form-control" id="expDate" name="expDate" [(ngModel)]="product.expDate">
+        
+        <button class="btn btn-lg btn-success text-white p-2 m-2" type="submit">Register Product</button>
+    </div>
+</form>

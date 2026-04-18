@@ -1,0 +1,11 @@
+<div class="container bg-success-subtle text-success text-center">
+    <h2 class="bg-primary text-white text-center">Pizza Delivery Info Dashboard</h2>
+    <h4>Pizza Delivery Status:</h4>
+    <!-- <h4>{{pizzaOrder$|async}}</h4> -->
+     <h4 *ngIf="!(pizzaOrder$|async); else completed">
+        We are preparing your pizza............................
+     </h4>
+     <ng-template #completed>
+        <h4>{{pizzaOrder$|async}}</h4>
+     </ng-template>
+</div>

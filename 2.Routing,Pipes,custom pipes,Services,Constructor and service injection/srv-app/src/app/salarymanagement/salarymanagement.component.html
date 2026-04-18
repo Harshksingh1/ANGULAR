@@ -1,0 +1,17 @@
+<!-- <input type="number" #sal>
+
+<button (click)="calculate(sal.value)">Click</button>
+
+<p *ngIf="bonus!=0">Salary: {{ salary }}</p>
+<p *ngIf="bonus!=0">Bonus: {{ bonus }}</p> -->
+
+
+
+<div class="container bg-primary text-white m-2">
+    <label for="salary">Enter Salary</label>
+    <input type="number" [(ngModel)]="salary">
+</div>
+<button class="btn btn-primary text-white p-2 m-2" (click)="calculate()">Click</button>
+@if(bonus){
+<h2 class="bg-success-subtle text-success">Bonus: {{bonus|currency:'INR'}}</h2>
+}
