@@ -1,0 +1,34 @@
+
+  <h2>Employee List</h2>
+
+  <div *ngFor="let emp of employees" class="card" [ngClass]="emp.profession.toLowerCase()">
+    <h3>{{ emp.name }}</h3>
+    <p><strong>DOJ:</strong> {{ emp.doj }}</p>
+    <p><strong>Salary:</strong> {{ emp.salary|currency:'INR'}}</p>
+    <p><strong>Profession:</strong> {{ emp.profession }}</p>
+
+    <div [ngSwitch]="emp.profession">
+
+      <p *ngSwitchCase="'Developer'">
+        Builds and maintains applications.
+      </p>
+
+      <p *ngSwitchCase="'HR'">
+        Handles recruitment and employee relations.
+      </p>
+
+      <p *ngSwitchCase="'Tester'">
+        Tests software for bugs and quality.
+      </p>
+
+      <p *ngSwitchCase="'Manager'">
+        Manages team and project delivery.
+      </p>
+
+      <p *ngSwitchDefault>
+        No description available
+      </p>
+
+    </div>
+  </div>
+

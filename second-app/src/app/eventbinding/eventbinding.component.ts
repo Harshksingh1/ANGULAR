@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './eventbinding.component.css'
 })
 export class EventbindingComponent {
-
+   welcome(){
+    alert('welcome to Event Binding');
+   }
 }

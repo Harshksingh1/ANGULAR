@@ -1,0 +1,11 @@
+.img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #feda75);
+    padding: 4px;
+}
+.class{
+    background-color: rgb(167, 202, 202);
+    text-align: center;
+}

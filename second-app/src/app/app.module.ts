@@ -12,6 +12,7 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { PropertyComponent } from './property/property.component';
 import { TwowayComponent } from './twoway/twoway.component';
+import { ExerciseProfessionComponent } from './exercise-profession/exercise-profession.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TwowayComponent } from './twoway/twoway.component';
     EventbindingComponent,
     InterpolationComponent,
     PropertyComponent,
-    TwowayComponent
+    TwowayComponent,
+    ExerciseProfessionComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,6 @@ import { TwowayComponent } from './twoway/twoway.component';
  
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [ExerciseProfessionComponent]
 })
 export class AppModule { }

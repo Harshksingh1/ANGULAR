@@ -1,5 +1,12 @@
-h2{
+.class{
     text-align: center;
-    background-color: red;
+    background-color: rgb(142, 126, 126);
     color: whitesmoke;
+}
+.img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #feda75);
+    padding: 4px;
 }

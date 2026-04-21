@@ -1,1 +1,13 @@
-<p>property works!</p>
+<div class="class">
+<h2>Property Binding Example</h2>
+Employee Name: <input [value]="emp_name">
+<br/>
+<img [src]="img_url" class="img" >
+<hr>
+<button [disabled]="isDisable">Property Binding Button</button>
+<hr>
+<button disabled="{{isDisable}}">Interpolation Button</button>
+</div>
+<br>
+
+<!-- interpolation will work only with string other than that we have to use property binding -->

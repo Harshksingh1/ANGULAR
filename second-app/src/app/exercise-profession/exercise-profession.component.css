@@ -1,0 +1,34 @@
+h2{
+    text-align: center;
+}
+
+.card {
+ margin: 20px;
+ padding: 10px;
+}
+
+.developer {
+  background-color: #e3f2fd;
+  border-color: black;
+  border-width: 2px;
+}
+
+.hr {
+  background-color: #fce4ec;
+  border-color: black;
+  border-width: 2px;
+}
+
+.tester {
+  background-color: #e8f5e9;
+  border-color: black;
+  border-width: 2px;
+
+}
+
+.manager {
+  background-color: #fff3e0;
+  border-color: black;
+  border-width: 2px;
+  
+}

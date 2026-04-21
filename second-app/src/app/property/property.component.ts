@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './property.component.css'
 })
 export class PropertyComponent {
-
+   emp_name:string='Harsh';
+   img_url:string='assets/images/Profile.jpeg';
+   isDisable:boolean=false;
 }

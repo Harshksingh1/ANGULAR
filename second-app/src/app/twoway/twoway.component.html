@@ -1,1 +1,12 @@
-<p>twoway works!</p>
+<div class="twoway">
+<h2>Two Way Data Binding</h2>
+<label>Employee Name: </label><input [(ngModel)]="emp_name" type="text"><br>
+<label>Employee Email: </label><input [(ngModel)]="emp_email" type="email"><br>
+<label>Employee Salary: </label><input [(ngModel)]="emp_salary" type="number"><br>
+
+
+<h4>Employee Information</h4>
+<h4>Employee Name: {{emp_name}}</h4>
+<h4>Employee Email: {{emp_email}}</h4>
+<h4>Employee Salary: {{emp_salary}}</h4>
+</div>
