@@ -1,0 +1,98 @@
+<form #form="ngForm" autocomplete="off" (submit)="createpassport(form)" class="card shadow p-4 border-0">
+
+    <h4 class="text-success mb-4 text-center">
+        <i class="bi bi-passport"></i> Passport Form
+    </h4>
+
+    <!-- ID -->
+    <div class="mb-3">
+        <label class="form-label fw-semibold text-success">ID</label>
+        <input type="text" name="Id"
+               [value]="srv.passportData.Id"
+               readonly
+               class="form-control bg-light border-success text-success">
+    </div>
+
+    <!-- Holder Name -->
+    <div class="mb-3">
+        <label class="form-label fw-semibold">Holder Name</label>
+        <div class="input-group">
+            <span class="input-group-text bg-white">
+                <i class="bi bi-person-bounding-box"
+                   [class.text-success]="HolderName.valid"
+                   [class.text-danger]="HolderName.invalid && HolderName.touched"></i>
+            </span>
+            <input name="HolderName"
+                   #HolderName="ngModel"
+                   [(ngModel)]="srv.passportData.HolderName"
+                   placeholder="Passport Holder Name"
+                   class="form-control"
+                   required autofocus>
+        </div>
+    </div>
+
+    <!-- Passport Number -->
+    <div class="mb-3">
+        <label class="form-label fw-semibold">Passport Number</label>
+        <div class="input-group">
+            <span class="input-group-text bg-white">
+                <i class="bi bi-0-square"
+                   [class.text-success]="PassportNumber.valid"
+                   [class.text-danger]="PassportNumber.invalid && PassportNumber.touched"></i>
+            </span>
+            <input name="PassportNumber"
+                   #PassportNumber="ngModel"
+                   [(ngModel)]="srv.passportData.PassportNumber"
+                   placeholder="Passport Number"
+                   class="form-control"
+                   required maxlength="10" minlength="10">
+        </div>
+    </div>
+
+    <!-- Expiry Date -->
+    <div class="mb-3">
+        <label class="form-label fw-semibold">Expiry Date</label>
+        <div class="input-group">
+            <span class="input-group-text bg-white">
+                <i class="bi bi-calendar2-week"
+                   [class.text-success]="ExpiryDate.valid"
+                   [class.text-danger]="ExpiryDate.invalid && ExpiryDate.touched"></i>
+            </span>
+            <input name="ExpiryDate"
+                   #ExpiryDate="ngModel"
+                   [(ngModel)]="srv.passportData.ExpiryDate"
+                   placeholder="DD/MM/YY"
+                   class="form-control"
+                   required maxlength="10" minlength="5">
+        </div>
+    </div>
+
+    <!-- Pin Code -->
+    <div class="mb-4">
+        <label class="form-label fw-semibold">Pin Code</label>
+        <div class="input-group">
+            <span class="input-group-text bg-white">
+                <i class="bi bi-pin-map"
+                   [class.text-success]="PPOCode.valid"
+                   [class.text-danger]="PPOCode.invalid && PPOCode.touched"></i>
+            </span>
+            <input name="PPOCode"
+                   #PPOCode="ngModel"
+                   [(ngModel)]="srv.passportData.PPOCode"
+                   placeholder="PinCode (6 digits)"
+                   class="form-control"
+                   required maxlength="6" minlength="6">
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="d-grid">
+        <button class="btn btn-success btn-lg"
+                type="submit"
+                [disabled]="form.invalid">
+            <i class="bi bi-database-up me-2"></i>
+            Create / Update
+        </button>
+    </div>
+
+</form>

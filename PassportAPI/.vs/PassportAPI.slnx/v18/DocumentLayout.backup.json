@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\ANGULAR\\PassportAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E07E228A-85A0-0B24-F08E-1CD89029B23F}|PassportAPI\\PassportAPI.csproj|h:\\angular\\passportapi\\passportapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E07E228A-85A0-0B24-F08E-1CD89029B23F}|PassportAPI\\PassportAPI.csproj|solutionrelative:passportapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E07E228A-85A0-0B24-F08E-1CD89029B23F}|PassportAPI\\PassportAPI.csproj|h:\\angular\\passportapi\\passportapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E07E228A-85A0-0B24-F08E-1CD89029B23F}|PassportAPI\\PassportAPI.csproj|solutionrelative:passportapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E07E228A-85A0-0B24-F08E-1CD89029B23F}|PassportAPI\\PassportAPI.csproj|h:\\angular\\passportapi\\passportapi\\passportapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E07E228A-85A0-0B24-F08E-1CD89029B23F}|PassportAPI\\PassportAPI.csproj|solutionrelative:passportapi\\passportapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E07E228A-85A0-0B24-F08E-1CD89029B23F}|PassportAPI\\PassportAPI.csproj|h:\\angular\\passportapi\\passportapi\\models\\passport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E07E228A-85A0-0B24-F08E-1CD89029B23F}|PassportAPI\\PassportAPI.csproj|solutionrelative:passportapi\\models\\passport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E07E228A-85A0-0B24-F08E-1CD89029B23F}|PassportAPI\\PassportAPI.csproj|h:\\angular\\passportapi\\passportapi\\controllers\\passportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E07E228A-85A0-0B24-F08E-1CD89029B23F}|PassportAPI\\PassportAPI.csproj|solutionrelative:passportapi\\controllers\\passportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "H:\\ANGULAR\\PassportAPI\\PassportAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PassportAPI\\Properties\\launchSettings.json",
+              "ToolTip": "H:\\ANGULAR\\PassportAPI\\PassportAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PassportAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-23T05:56:36.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PassportAPI",
+              "DocumentMoniker": "H:\\ANGULAR\\PassportAPI\\PassportAPI\\PassportAPI.csproj",
+              "RelativeDocumentMoniker": "PassportAPI\\PassportAPI.csproj",
+              "ToolTip": "H:\\ANGULAR\\PassportAPI\\PassportAPI\\PassportAPI.csproj",
+              "RelativeToolTip": "PassportAPI\\PassportAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-23T05:53:31.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PassportsController.cs",
+              "DocumentMoniker": "H:\\ANGULAR\\PassportAPI\\PassportAPI\\Controllers\\PassportsController.cs",
+              "RelativeDocumentMoniker": "PassportAPI\\Controllers\\PassportsController.cs",
+              "ToolTip": "H:\\ANGULAR\\PassportAPI\\PassportAPI\\Controllers\\PassportsController.cs",
+              "RelativeToolTip": "PassportAPI\\Controllers\\PassportsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T04:57:35.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Passport.cs",
+              "DocumentMoniker": "H:\\ANGULAR\\PassportAPI\\PassportAPI\\Models\\Passport.cs",
+              "RelativeDocumentMoniker": "PassportAPI\\Models\\Passport.cs",
+              "ToolTip": "H:\\ANGULAR\\PassportAPI\\PassportAPI\\Models\\Passport.cs",
+              "RelativeToolTip": "PassportAPI\\Models\\Passport.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T04:14:18.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\ANGULAR\\PassportAPI\\PassportAPI\\Program.cs",
+              "RelativeDocumentMoniker": "PassportAPI\\Program.cs",
+              "ToolTip": "H:\\ANGULAR\\PassportAPI\\PassportAPI\\Program.cs*",
+              "RelativeToolTip": "PassportAPI\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T04:40:21.779Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

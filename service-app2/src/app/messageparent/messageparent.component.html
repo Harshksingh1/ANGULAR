@@ -1,0 +1,16 @@
+<div class="container">
+  <h4 class="bg-success-subtle text-success">Parent Component</h4>
+
+  <h4 class="bg-success-subtle text-success">
+    Greeting from Child: {{ greetingMessage }}
+  </h4>
+</div>
+
+<hr>
+
+<div class="container bg-danger-subtle">
+  <app-messagechild
+    [username]="username"
+    (greetingsEvent)="receiveGreeting($event)">
+  </app-messagechild>
+</div>

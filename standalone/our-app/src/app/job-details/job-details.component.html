@@ -1,0 +1,12 @@
+<div>
+<h4 class="text-center text-white bg-primary">Job Details</h4>
+<div class="card" style="width: 18rem">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Title: {{job?.title}}</li>
+        <li class="list-group-item">Title: {{job?.company}}</li>
+        <li class="list-group-item">Title: {{job?.exp}}</li>
+        <button class="btn btn-primary text-white" (click)="saveJob()">Save Job</button>
+    </ul>
+    <a class="btn btn-primary m-2 p-2" [routerLink]="['/apply',job?.id]">Apply Now</a>
+</div>
+</div>
