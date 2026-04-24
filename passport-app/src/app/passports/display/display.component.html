@@ -6,6 +6,8 @@
             <td>Passport Number</td>
             <td>Passport Expiry</td>
             <td>PPO Code</td>
+            <td>Edit</td>
+            <td>Delete</td>
         </tr>
     </thead>
     <tbody>
@@ -15,6 +17,16 @@
             <td>{{p.PassportNumber}}</td>
             <td>{{p.ExpiryDate}}</td>
             <td>{{p.PPOCode}}</td>
+            <td>
+                <button class="btn btn-primary btn-sm" (click)="fillform(p)">
+                    <i class="bi bi-pencil-square"></i>
+                </button>
+            </td>
+            <td>
+                <button class="btn btn-danger btn-sm" (click)="onDelete(p.Id)">
+                    <i class="bi bi-trash"></i>
+                </button>
+            </td>
         </tr>
     </tbody>
 </table>

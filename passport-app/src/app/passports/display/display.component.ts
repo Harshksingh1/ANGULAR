@@ -21,5 +21,22 @@ export class DisplayComponent implements OnInit{
     this.srv.getPassportsList();
    
   }
-   
+  fillform(selectedPassport){
+    this.srv.passportData=Object.assign({},selectedPassport);
+  }
+  onDelete(pid){
+    if(confirm('Are you sure to delete the passport?'))
+    {
+      this.srv.deletePassport(pid).subscribe
+      (
+        res=>{
+          alert('passport Deleted!!!')
+          this.srv.getPassportsList();
+        },
+        err=>{
+          alert('Error!!!'+err);
+        }
+      )
+    }
+  }   
 }

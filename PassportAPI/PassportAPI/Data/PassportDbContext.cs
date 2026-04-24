@@ -15,5 +15,6 @@ namespace PassportAPI.Data
         }
 
         public DbSet<PassportAPI.Models.Passport> Passport { get; set; } = default!;
+        public DbSet<PassportAPI.Models.Product> Product { get; set; } = default!;
     }
 }

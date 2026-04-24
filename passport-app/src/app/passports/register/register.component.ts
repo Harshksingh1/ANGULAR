@@ -11,7 +11,6 @@ import { FormsModule, NgForm } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
     constructor(public srv:PassportService){
-
     }
     resetForm(form?:NgForm){
       if(form!=null){form.resetForm()}
@@ -28,5 +27,20 @@ export class RegisterComponent implements OnInit {
         alert('passport creation success!!!');
         this.srv.getPassportsList();},
         err=>{alert('Error !!!'+err);})
+    }
+     updatepassport(form:NgForm){
+      this.srv.putpassport().subscribe(res=>{
+        this.resetForm();
+        alert('passport Updated!!!');
+        this.srv.getPassportsList();},
+        err=>{alert('Error !!!'+err);})
+    }
+    onSubmit(form:NgForm){
+      if(this.srv.passportData.Id==0){
+        this.createpassport(form);
+      }
+      else{
+        this.updatepassport(form);
+      }
     }
 }

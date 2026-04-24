@@ -1,0 +1,24 @@
+<table class="table table-hover table-danger table-bordered">
+    <thead>
+        <tr>
+            <td>Product Id</td>
+            <td>Product Name</td>
+            <td>Product Price</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of srv.productList">
+            <td>{{p.Id}}</td>
+            <td>{{p.Name}}</td>
+            <td>{{p.prop}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- <h2>Product List (RxJS)</h2>
+<ul>
+    <li *ngFor="let Product of products$ |async">
+        {{Product.Name}} - {{Product.prop}}
+    </li>
+</ul> -->

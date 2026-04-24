@@ -16,4 +16,10 @@ export class PassportService {
   postPassport(){
     return this.objHttp.post(this.passportApiUrl,this.passportData);
   }
+  deletePassport(id){
+    return this.objHttp.delete(this.passportApiUrl+'/'+id);
+  }
+  putpassport(){
+    return this.objHttp.put(this.passportApiUrl+'/'+this.passportData.Id,this.passportData);
+  }
 }
