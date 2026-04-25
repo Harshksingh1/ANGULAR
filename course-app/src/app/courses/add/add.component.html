@@ -1,0 +1,89 @@
+<form #form="ngForm"
+      (ngSubmit)="onSubmit(form)"
+      class="card shadow-lg border-0 mt-4">
+
+  <!-- Header -->
+  <div class="card-header bg-dark text-white d-flex align-items-center">
+    <h4 class="mb-0">
+      📘 Course Form
+    </h4>
+  </div>
+
+  <!-- Body -->
+  <div class="card-body">
+
+    <!-- ID -->
+    <div class="row mb-3">
+      <label class="col-sm-3 col-form-label fw-semibold">Course ID</label>
+      <div class="col-sm-9">
+        <input type="text"
+               name="Id"
+               [(ngModel)]="courseData.Id"
+               class="form-control bg-light"
+               readonly>
+      </div>
+    </div>
+
+    <!-- Title -->
+    <div class="row mb-3">
+      <label class="col-sm-3 col-form-label fw-semibold">Title</label>
+      <div class="col-sm-9">
+        <input type="text"
+               name="Title"
+               [(ngModel)]="courseData.Title"
+               #title="ngModel"
+               class="form-control"
+               placeholder="Enter course title"
+               required>
+        <small class="text-danger" *ngIf="title.invalid && title.touched">
+          Title is required
+        </small>
+      </div>
+    </div>
+
+    <!-- Instructor -->
+    <div class="row mb-3">
+      <label class="col-sm-3 col-form-label fw-semibold">Instructor</label>
+      <div class="col-sm-9">
+        <input type="text"
+               name="Instructor"
+               [(ngModel)]="courseData.Instructor"
+               #instructor="ngModel"
+               class="form-control"
+               placeholder="Enter instructor name"
+               required>
+        <small class="text-danger" *ngIf="instructor.invalid && instructor.touched">
+          Instructor is required
+        </small>
+      </div>
+    </div>
+
+    <!-- Duration -->
+    <div class="row mb-3">
+      <label class="col-sm-3 col-form-label fw-semibold">Duration</label>
+      <div class="col-sm-9">
+        <input type="number"
+               name="Duration"
+               [(ngModel)]="courseData.Duration"
+               #duration="ngModel"
+               class="form-control"
+               placeholder="Enter duration"
+               required min="1">
+        <small class="text-danger" *ngIf="duration.invalid && duration.touched">
+          Enter valid duration
+        </small>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="card-footer text-end">
+    <button type="submit"
+            class="btn btn-success px-4"
+            [disabled]="form.invalid">
+      💾 Save
+    </button>
+  </div>
+
+</form>

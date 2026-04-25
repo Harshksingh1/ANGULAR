@@ -1,0 +1,48 @@
+<div class="card shadow-lg border-0">
+  <div class="card-header bg-dark text-white">
+    <h5 class="mb-0">📚 Course List</h5>
+  </div>
+
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-hover mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Instructor</th>
+            <th>Duration</th>
+            <th class="text-center">Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let p of courses; let i = index">
+            <td>{{i + 1}}</td>
+
+            <td>
+              <strong>{{p.Title}}</strong>
+            </td>
+
+            <td>
+              <span class="badge bg-info text-dark">
+                {{p.Instructor}}
+              </span>
+            </td>
+
+            <td>
+              <span class="text-muted">{{p.Duration}} hrs</span>
+            </td>
+
+            <td class="text-center">
+              <button class="btn btn-outline-danger btn-sm" (click)="onDelete(p.Id)">
+                <i class="bi bi-trash"></i>Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
